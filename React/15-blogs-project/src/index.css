@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.spinner {
+   width: 88px;
+   height: 88px;
+   border: 17.6px #3c96e5 double;
+   border-left-style: solid;
+   border-radius: 50%;
+   animation: spinner-aib1d7 0.75s infinite linear;
+}
+
+@keyframes spinner-aib1d7 {
+   to {
+      transform: rotate(360deg);
+   }
+}
+
+.Home{
+   margin-top: 7rem;
+}
+
+.BlogPage{
+   margin-top: 7rem;
+}
+
+.BlogPage h2{
+   font-size: x-large;
+   margin-top: 1.5rem;
+}
+
+.TagPageHeader{
+   width: 600px;
+   margin-top: 7rem;
+   display: flex;
+   justify-content: start;
+   align-items: center;
+}
+
+.TagPageHeader p{
+   font-size: larger;
+   font-weight: bold;
+}
+
+
+
+.CategoryPageHeader{
+   margin-top: 7rem;
+   margin-bottom: 1rem;
+   display: flex;
+   width: 600px;
+   justify-content: start;
+   align-items: center;
+}
+
+.CategoryPageHeader p{
+   font-size: larger;
+}
