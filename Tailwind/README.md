@@ -36,3 +36,11 @@ module.exports = {
   },
   plugins: [],
 }
+```
+
+## Usage
+🎨 Customize the Tailwind configuration in tailwind.config.js to match your project's aesthetic.
+🚀 Utilize the utility classes in your HTML files, unlocking the magic of rapid styling with Tailwind CSS.
+Feel free to explore and expand your project according to your creative whims!
+
+Happy coding! 🚀✨
