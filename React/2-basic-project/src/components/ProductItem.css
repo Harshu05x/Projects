@@ -1,0 +1,10 @@
+.ProductItem{
+    width: 90%;
+    background-color: aqua;
+    margin: 20px auto;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
