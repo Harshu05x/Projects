@@ -1,0 +1,42 @@
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-weight: 700;
+}
+
+.contentDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    font-size: 2rem;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+p{
+    margin: 5px 10px;
+    cursor: pointer;
+}
+
+.middlePara{
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    padding-left: 35px;
+    padding-right: 35px;
+    pointer-events: none;
+}
+
+button{
+    all: unset;
+    color: white;
+    background-color: rgb(205, 156, 50);
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-radius: 10px;
+    cursor: pointer;
+}
