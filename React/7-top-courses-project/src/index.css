@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.App{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    background-color: rgba(38, 33, 61, 0.92);
+}
+
+.navbar{
+    background-color: rgb(31, 26, 58);
+    padding: 15px;
+    text-align: center;
+    color: white;
+}
+
+
+.filter{
+    width: 11/12;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+    gap: 20px;
+    padding: 15px; 
+}
+
+.filter button{
+    /* all: unset; */
+    font-size: large;
+    padding: 10px 10px;
+    border-radius: 10px;
+    font-weight: 500;
+    color: white;
+    cursor: pointer;
+}
+.categoryChecked{
+    all: unset;
+    background-color: black;
+    border: 1px solid white;
+}
+
+.categoryNotChecked{
+    all: unset;
+    background-color: rgb(37, 33, 60);
+}
+
+.categoryNotChecked:hover{
+    background-color: rgba(95, 92, 110, 0.388);
+}
+
+.courseCards{
+    width: 11/12;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+}
+  
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.card{
+    width: 300px;
+    background-color: rgb(37, 33, 60);
+    overflow: hidden;
+    border-radius: 10px;
+    transition: all linear .2s;
+}
+
+.card:hover{
+    transform: scale(1.05);
+    z-index: 10;
+    border: 1px solid white;
+    box-shadow: 0 0 15px black;
+}
+
+.image{
+    position: relative;
+}
+
+.image img{
+    width: 300px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.likebtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.likebtn button{
+    width: 40px;
+    height: 40px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    right: 2%;
+    bottom: 4%;
+    cursor: pointer;
+}
+
+.courseDesc{
+    height: 50%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    align-items: flex-start;
+}
+
+.title{
+    color: white;
+    font-weight: bold;
+    font-size: larger;
+    line-height: 1.6em;
+    letter-spacing: .05em;
+}
+
+.desc{
+    margin-top: 10px;
+    color: white;
+}
