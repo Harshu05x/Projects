@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mooli', sans-serif;
+    font-family: 'Mulish', sans-serif;
+}
+
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: linear-gradient(45deg, #0a0a0a, #3a4452);
+}
+
+.content h1{
+    color: white;
+    font-size: 4.2rem;
+    text-transform: uppercase;
+}
+
+.content .text{
+    color: white;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.secText{
+    color: #6dee0a;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.calculator{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 16px;
+    background: transparent;
+    box-shadow: 0px 3px 15px rgba(113, 115, 119, 0.5);
+
+}
+
+.calculator input{
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 320px;
+    font-size: 3rem;
+    text-align: right;
+    padding: 25px 0;
+    color: white;
+}
+
+
+.row{
+    display: flex;
+    gap: 10px;
+}
+
+p{
+    border: none;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    border-radius: 50%;
+    background: transparent;
+    color: #ffffff;
+    font-size: 20px;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.operator{
+    color: #6dee0a;
+    font-weight: 600;
+}
+
+.equalTo{
+    background-color: #fb7c14;
+    font-weight: 600;
+
+}

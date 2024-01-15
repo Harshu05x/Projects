@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --prim-color:   rgba(28, 28, 28, 0.594);
+}
+
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(tic-tac-toe.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.game-info{
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 5%;
+    transform: translateX(-50%);
+    background-color: var(--prim-color);
+    border-radius: 1rem;
+    border: 1px solid white;
+    padding: 0.5rem 3rem;
+    text-align: center;
+}
+
+img{
+    width: 300px;
+    height: 300px;
+    display: none;
+}
+
+.img3,.img4{
+    width: 300px;
+    height: 500px;
+}
+
+.imgActive{
+    display: inline;
+}
+
+.img1{
+    position: absolute;
+    left: 10%;
+    top: 40%;
+}
+.img2{
+    position: absolute;
+    right: 10%;
+    top: 40%;
+}
+
+.img3{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+}
+
+.img4{
+    position: absolute;
+    top: 20%;
+    right: 10%;
+}
+
+.tic-tac-toe{
+    width: 90%;
+    max-width: 20rem;
+    background-color: var(--prim-color);
+    border: 1px solid white;
+    border-radius: 1rem;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    aspect-ratio: 1/1;
+}
+
+.box{
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+    font-size: 3rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box1, .box2, .box4, .box5{
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+.box3, .box6{
+    border-bottom: 2px solid white;
+}
+
+.box7, .box8{
+    border-right: 2px solid white;
+}
+
+.btn{
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    transform: translateX(-50%);
+    background-color: var(--prim-color);
+    color: white;
+    border: 1px solid white;
+    border-radius: 1rem;
+    padding: 0.5rem 2rem;
+    font-size: 1rem;
+    display: none;
+}
+
+.btn.active{
+    display: flex;
+}
+
+.win{
+    background-color: rgba(0, 255, 0, 0.5);
+}
+
+.lose{
+    background-color: rgba(255, 0, 0, 0.5);
+}

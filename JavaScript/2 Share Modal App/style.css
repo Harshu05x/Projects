@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.main-div{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 0;
+    background-image: url(bg-im.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.circle_I{
+    position: absolute;
+    top: 5%;
+    left: 26%;
+    background: rgb(36,0,28);
+    background: radial-gradient(circle, rgba(36,0,28,1) 0%, rgba(163,95,104,1) 0%, rgba(255,0,82,1) 0%, rgba(255,0,65,0.6111694677871149) 100%);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 50px #b87888;
+    z-index: -1;
+    animation: movecircle_I 2s linear 0s infinite alternate;
+    /* animation-name: movecircle_I; */
+    transition: 2s all linear;
+}
+
+@keyframes movecircle_I {
+    from{
+        transform: translatex(0px);
+    }
+    to{
+        transform: translateX(25px);
+    }
+}
+.circle_II{
+    position: absolute;
+    top: 68%;
+    right: 30%;
+    background: rgb(36,0,28);
+    background: radial-gradient(circle, rgba(36,0,28,1) 0%, rgba(95,140,163,0.7736344537815126) 0%, rgba(4,142,251,1) 100%, rgba(120,136,184,1) 100%);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 50px #5f8ca3;
+    z-index: -1;
+    animation: movecircle_II 2s linear 0s infinite alternate;
+    transition: 2s all linear;
+}
+
+@keyframes movecircle_II {
+    from{
+        transform: translatex(0px);
+    }
+    to{
+        transform: translateX(25px);
+    }
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2.5rem;
+    color: white;
+    border: 1px rgba(86, 84, 84, 0.447) solid;
+    border-radius:  10px;
+    padding: 3rem;
+    background-color: rgba(50, 48, 48, 0.58);
+    z-index: 2;
+}
+
+.card a{
+    text-decoration: none;
+    color: white;
+    transition: 0.4s all linear;
+}
+
+.card_img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.card_heading{
+    font-size: x-large;
+}
+
+.card_para{
+    font-size: large;
+}
+
+.btns{
+    background-color: transparent;
+    border: 1px white solid;
+    text-align: center;
+    font-size: small;
+    color: white;
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: 0.4s all linear;
+    /* z-index: 2; */
+}
+
+.btns:hover{
+    background-color: white;
+    color: black;
+}
+.card a:hover{
+    color: black;
+}
+
+.modal{
+    position: absolute;
+    transform: scale(0);
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    background-color: rgba(22, 21, 21, 0.893);
+    padding: 20px 30px;
+    border-radius: 30px;
+    border: 2px solid gray;
+    z-index: 20;
+    transition: 0.5s all ease-in;
+}
+
+.active{
+    transform: scale(1.1);
+}
+
+.modal_heading{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 80px;
+    width: 100%;
+    font-size: small;
+    border-bottom: 2px rgba(86, 84, 84, 0.447) solid;
+    padding-bottom: 10px;
+}
+.modal_lower_half{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+.icons{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: larger;
+    gap: 10px;
+}
+
+.icon{
+    border-radius: 50%;
+    padding: 10px;
+    transition: 0.5s all linear;
+}
+
+.icon:hover{
+    transform: scale(1.2);
+}
+
+.fb{
+    border: 1px solid blue;
+    color: blue;
+}
+
+.tw{
+    border: 1px solid blue;
+    color: blue;
+}
+
+.ig{
+    border: 1px solid rgb(202, 54, 84);
+    color: rgb(206, 71, 98);
+}
+
+.wp{
+    border: 1px solid green;
+    color: green;
+}
+
+.tg{
+    border: 1px solid skyblue;
+    color: skyblue;
+}
+
+.overlay{
+    transform: scale(0);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-color: rgba(128, 128, 128, 0.26);
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.overlayActive{
+    transform: scale(1);
+}

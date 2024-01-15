@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- main div  -->
+    <div class="w-[100vw] h-[100vh] main-div flex justify-center items-center bg-[#344151]">
+        <!-- content  -->
+        <div class="w-20% h-20% flex flex-col text-2xl space-y-6 font-semibold">
+            <!-- text content  -->
+            <h1 class="text-[#0398d4]">Increment and Decrement</h1>
+
+            <div class="flex flex-row justify-evenly bg-white pt-2 pb-2 rounded-sm text-center">
+                <!-- negative button  -->
+                <button id="minusBtn" onclick="decrement()">-</button>
+                <p class="border-l-2 border-r-2 border-gray-300 pr-10 pl-10 counter">0</p>
+                <!-- positive button  -->
+                <button id="plusBtn" onclick="increment()">+</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

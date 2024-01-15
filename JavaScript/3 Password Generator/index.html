@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <!-- Link Font Awesome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Link CSS File  -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+        <h1>Password Generator</h1>
+
+        <div class="display-container">
+            <input readonly placeholder="Password" class="display" display-password>
+            <button copy-btn class="cpy-btn">
+                <span data-copy-msg class="tool-tip"></span>
+                <i class="fa-regular fa-clone" width="23" heigth="23"></i>
+            </button>
+        </div>
+
+        <div class="input-container">
+            <!-- Password Length section  -->
+            <div class="length-container">
+                <p>Password Length</p>
+                <p data-length>0</p>
+            </div>
+
+            <!-- Length slider  -->
+            <input type="range" min="1" max="20" class="slider" step="1" data-length-slider>
+
+            <!-- Checkboxes  -->
+            <div class="chkBox">
+                <input type="checkbox"  id="uppercase">
+                <label for="uppercase">Includes Uppercase Letters</label>
+            </div>
+            <div class="chkBox">
+                <input type="checkbox"  id="lowercase">
+                <label for="lowercase">Includes Lowercase Letters</label>
+            </div>
+            <div class="chkBox">
+                <input type="checkbox"  id="numbers">
+                <label for="numbers">Includes Numbers </label>
+            </div>
+            <div class="chkBox">
+                <input type="checkbox"  id="symbols">
+                <label for="symbols">Includes Symbols </label>
+            </div>
+
+            <!-- strength section  -->
+            <div class="strength-container">
+                <p>Strength</p>
+                <div class="cricle" data-indicator></div>
+            </div>
+
+            <!-- Generatre Password section  -->
+            <button class="Generate-btn">Generate Password</button>
+        </div>
+    </div>
+
+    <!-- Link JS File  -->
+    <script src="script.js"></script>
+</body>
+</html>
