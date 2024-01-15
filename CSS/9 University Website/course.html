@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="subheader">
+            <div class="navBar">
+                <a href="index.html"><img src="Images/logo.png" alt=""></a>
+                <div class="navlinks" id="navLink">
+                    <i class="fa-solid fa-xmark" onclick="hidemenu()"></i>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="course.html">Course</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <i class="fa-solid fa-bars" onclick="showmenu()"></i>
+            </div>
+            <h1>Our Courses</h1>
+        </div>
+
+        <div class="course">
+            <h1>Courses We Offer</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, eius.</p>
+            <div class="row">
+                <div class="col">
+                    <h3>Intermediate</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat consequatur error quae laboriosam ad libero nostrum tempora, enim sint eius asperiores sed, ab quia illo unde ipsam qui ut dicta.</p>
+                </div>
+                <div class="col">
+                    <h3>Degree</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat consequatur error quae laboriosam ad libero nostrum tempora, enim sint eius asperiores sed, ab quia illo unde ipsam qui ut dicta.</p>
+                </div>
+                <div class="col">
+                    <h3>Post Graduation</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat consequatur error quae laboriosam ad libero nostrum tempora, enim sint eius asperiores sed, ab quia illo unde ipsam qui ut dicta.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="facilities">
+            <h1>Our Facilities</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, cum?</p>
+
+            <div class="row">
+                <div class="facili-col">
+                    <img src="Images/library.png" alt="">
+                    <h3>World Class Library</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, iusto. Tempore ipsa aut ea architecto.</p>
+                </div>
+                <div class="facili-col">
+                    <img src="Images/basketball.png" alt="">
+                    <h3>Largest Play Ground</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, iusto. Tempore ipsa aut ea architecto.</p>
+                </div>
+                <div class="facili-col">
+                    <img src="Images/cafeteria.png" alt="">
+                    <h3>Test & Healthy Food</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, iusto. Tempore ipsa aut ea architecto.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci minus deleniti aspernatur explicabo eveniet, 
+           <br> laudantium quo maiores sed obcaecati, sequi, eos dignissimos consequatur? Quaerat vero id reiciendis ratione illum repellendus!</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+        <p>Made with <i class="fa-regular fa-heart"></i> by EDUFORD</p>
+    </footer>
+
+    <script>
+        var navLink = document.getElementById("navLink");
+        function showmenu(){
+            navLink.style.right = "0";
+        }
+
+        function hidemenu(){
+            navLink.style.right = "-300px";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Server</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .container{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("Images/header-image.png");
+            background-size: cover;
+            background-position:center;
+        }
+
+        h1{
+            color: red;
+            font-size: 3rem;
+            font-weight: bold;
+            animation: slideDown 2s ease 0s 1 normal forwards;
+            position: absolute;
+        }
+
+        @keyframes slideDown {
+            from{
+                top:0;
+            }
+            to{
+                top:33%;
+            }
+        }
+
+        .loader{
+           display: flex;
+           justify-content: space-evenly;
+           align-items: center;
+           gap: 20px;
+        }
+
+        .box{
+            width: 20px;
+            height: 20px;
+            background-color: red;
+            border-radius: 50%;
+            animation: up-down 1s ease infinite alternate;
+        }
+        .box:nth-child(2){
+            animation-delay: 0.1s;
+        }
+        .box:nth-child(3){
+            animation-delay: 0.2s;
+        }
+        .box:nth-child(4){
+            animation-delay: 0.4s;
+        }
+        @keyframes up-down {
+            from{
+                transform: translateY(-15px);
+            }
+            to{
+                transform: translateY(15px);
+            }
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Server Down !!!</h1>
+        <div class="loader">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+
+    </div>
+</body>
+</html>

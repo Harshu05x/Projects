@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 20%;
+    height: 50%;
+}
+
+.cardHeading{
+    width: 95%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to right bottom, #1b007f, #6c006d, #950056, #ad003d, #b81924);
+    /* margin-top: 5px; */
+    justify-content: center;
+    align-items: start;
+    margin: auto;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 30px;
+    padding-left: 20px;
+}
+
+.cardHeading h1{
+    font-size: 1.7rem;
+    color: white;
+}
+
+.cardHeading h3{
+    color: grey;
+}
+
+.content{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.features{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+#up{
+    color: grey;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+#down{
+    margin-top: 5px;
+    font-size: 1.1.rem;
+    font-weight:500;
+    margin-bottom: 10px;
+}
+
+.one{
+    border-bottom: 1px solid grey;
+}
+
+.two{
+    border-bottom: 1px solid grey;
+}
+
+.three{
+    border-bottom: 1px solid grey;
+}
+
+.overlay{
+    display: flex;
+    gap: 10px;
+    margin: auto;
+    opacity: 0;
+    transition: all 0.3s linear;
+}
+
+.card:active{
+    .overlay{
+        opacity: 1;
+        max-width: fit-content;
+    }
+    .sign{
+        color:red;
+        font-size: 1.2rem;
+    }
+    transform: scale(1.1);
+    border: 2px solid rgb(98, 95, 95);
+}
+
+
