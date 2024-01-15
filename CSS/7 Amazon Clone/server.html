@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Server</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .container{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            background-color: #4a74a0;
+        }
+
+        h1{
+            font-size: 3rem;
+            font-weight: bold;
+            animation: slideDown 2s ease 0s 1 normal forwards;
+            position: absolute;
+        }
+
+        @keyframes slideDown {
+            from{
+                top:0;
+            }
+            to{
+                top:32%;
+            }
+        }
+
+        .loader{
+            border: 8px solid white;
+            border-top-color: #009578;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            align-self: center;
+            animation: loding 0.75s ease infinite;
+        }
+        @keyframes loding {
+            from{
+                transform: rotate(0turn);
+            }
+            to{
+                transform: rotate(1turn);
+            }
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Server Down !!!</h1>
+        <div class="loader">
+
+        </div>
+
+    </div>
+</body>
+</html>

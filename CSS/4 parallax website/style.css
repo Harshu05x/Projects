@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.parallax-I{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("parallax_img.jpeg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#parallaxH1{
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-decoration: solid;
+    text-indent: 2px;
+    letter-spacing: 1.1rem;
+    background-color: rgba(51, 51, 61, 0.943);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.para1{
+    width: 100vw;
+    background-color: rgba(51, 51, 61, 0.943);
+    color: white;
+    text-align: justify;
+    padding: 20px;
+}
+
+.para1 h1{
+    text-align: center;
+    letter-spacing: 1.2rem;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.parallax-II{
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("parallax_img2.jpeg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.para2{
+    width: 100vw;
+    background-color: rgba(51, 51, 61, 0.943);
+    color: white;
+    text-align: justify;
+    padding: 20px 20px 20px 50px;
+}
+
+.parallax-III{
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("parallax_img3.jpeg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.para3{
+    width: 100vw;
+    background-color: rgba(51, 51, 61, 0.943);
+    color: white;
+    text-align: justify;
+    padding: 20px 20px 20px 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media (max-width:750px) {
+    .para3{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.para3 a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: all 0.6s linear 0s;
+}
+
+.para3 a:hover{
+    transform: scale(1.2);
+}
