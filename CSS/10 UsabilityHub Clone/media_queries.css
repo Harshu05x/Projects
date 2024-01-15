@@ -1,0 +1,101 @@
+@media (max-width: 1010px) {
+    .nav-toggle{
+        display: block;
+        margin-right: 20px;
+    }
+
+    .nav-links{
+        position: absolute;
+        background-color: white;
+        left: -100%;
+        top: 100%;
+        width: 100%;
+        padding-block: 20px;
+        transition: 0.3s ease-in;
+    }
+    .sign-up-btn{
+        width: 100%;
+    }
+    .nav-links.active{
+        left: 0;
+    }
+    .nav-links ul{
+        flex-direction: column;
+    }
+    .main-nav{
+        overflow: initial;
+    }
+
+    .examples-area{
+        gap: 20px;
+    }
+    .example-card{
+        width: 48%;
+        height: 180px;
+    }
+    .cta{
+        padding-block: 70px;
+    }
+}
+
+@media (max-width: 780px) {
+    .header-section{
+        flex-direction: column-reverse;
+    }
+    .header-left{
+        max-width: 100vw;
+        text-align: center;
+    }
+    .pri-btn{
+        width: 100%;
+    }
+    .features-card{
+        min-width: calc(50% - 20px);
+    }
+    .big-features-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .big-features-container img{
+        width: 80%;
+    }
+    .big-features-container-2nd{
+        flex-direction: column-reverse;
+    }
+    .footer-container{
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+    .link-column{
+        align-items: center;
+    }
+}
+
+@media (max-width: 470px) {
+    :root{
+        --padding-inline-section: 10px;
+    }   
+    h1{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    h3{
+        font-size: 1.2rem;
+    }
+    p{
+        font-size: 1rem;
+    }
+    .features-card{
+        min-width: 100%;
+    }
+    .example-card{
+       width: 100%; 
+    }
+    .example-card h3{
+        font-size: 1.2rem;
+    }
+}
